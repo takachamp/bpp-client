@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  margin-left: 20px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #333;
+}
