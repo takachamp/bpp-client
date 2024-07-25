@@ -1,16 +1,20 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import HomePage from './pages/HomePage';
 
 const App = () => {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        {/* ここに他のコンポーネントやページを追加 */}
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
