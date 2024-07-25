@@ -19,6 +19,47 @@
   margin-bottom: 10px;
 }
 
+.article-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.article-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.article-excerpt {
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #888;
+}
+
 .article-meta {
   display: flex;
   flex-wrap: wrap;

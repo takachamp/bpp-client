@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ArticleList.css';
 
 const ArticleList = ({ articles }) => {
@@ -6,13 +7,19 @@ const ArticleList = ({ articles }) => {
     <div className="article-list">
       {articles.map((article) => (
         <div key={article.id} className="article-item">
-          <h2>{article.title}</h2>
-          <p>{article.excerpt}</p>
+          <div className="article-date">{"article-item"}</div>
+          <Link to={article.url} className="article-title">{article.title}</Link>
+          <p>
+          <Link to={article.url}>
+            <img src={article.image} alt={article.title} className="article-image" />
+          </Link>
+          </p>
+          <div className="article-excerpt">{article.excerpt}</div>
+          <Link to={article.url} className="read-more">続きを読む</Link>
           <div className="article-meta">
-            <span>Date: {article.date}</span>
-            <span>Author: {article.author}</span>
-            <span>Category: {article.category}</span>
-            <span>Tags: {article.tags.join(', ')}</span>
+            <span className="article-tags">{article.tags.join(', ')}</span>
+            <span className="article-time">{article.time}</span>
+            <span className="article-comments">{article.comments}件のコメント</span>
           </div>
         </div>
       ))}
